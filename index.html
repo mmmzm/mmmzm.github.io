@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HyunA Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <main id="app">
+      <section class="section-intro">
+        <header id="header">
+          <h1 class="txt-invisible">Portfolio</h1>
+          <nav>
+            <ul class="nav-list">
+              <li><a href="#about" class="list-link">About</a></li>
+              <li><a href="#project" class="list-link">Project</a></li>
+            </ul>
+          </nav>
+          <div class="bar-bg">
+            <span class="bar-ing"></span>
+          </div>
+        </header>
+        <div class="cont-intro">
+          <a name="info"></a>
+          <p class="txt-title">
+            <span class="txt-overlay">Developer</span>
+            <span class="light">안녕하세요, 개발자를 꿈꾸는 </span><span class="bold">박현아</span><span class="light">입니다.</span>
+          </p>
+          </div>
+          <!-- 스크롤 안내 아이콘 추가 -->
+          <div class="scroll-down">
+            <i class="fa-solid fa-angles-down"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-about">
+        <a name="about"></a>
+        <h2>About Me</h2>
+        <div class="cont-about">
+          <div class="slide-container">
+            <div class="slide-album">
+              <div class="slide-images">
+                <img src="src/img/profile.jpg" alt="img" />
+              </div>
+            </div>
+          </div>
+          <div class="info-about">
+            <dl class="txt-about">
+              <div>
+                <dd>#책임감 #피드백_수용 #끊임없는_배움 #사용자_중심_개발추구</dd>
+              </div>
+            </dl>
+            <div class="btn-about">
+              <button class="btn-open" type="button">
+                <i class="fa-solid fa-user"></i> Me
+              </button>
+              <button class="btn-open" type="button">
+                <i class="fa-solid fa-screwdriver-wrench"></i> Stack
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-project">
+        <a name="project"></a>
+        <h2>Project</h2>
+        <article class="box-project">
+          <div>
+            <img
+              class="img-project"
+              src="src/img/project.PNG"
+              alt="프로젝트 이미지"
+            />
+            <button
+              class="btn-detail"
+              type="button"
+              onclick="location.href='https://github.com/hykim-king/DOMA';"
+            >
+              GitHub 바로가기
+            </button>
+          </div>
+          <div class="txt-project">
+            <h3>DORO MASTER</h3>
+            <dl>
+              <dt>기간</dt>
+              <dd>2024.07.01~08.26(총 9주)</dd>
+              <dt>설명</dt>
+              <dd>도로상황 빅데이터 통합 플랫폼 웹 서비스</dd>
+              <dt>사용 기술</dt>
+              <dd>HTML / JavaScript / CSS / Bootstrap / <br>Spring / Oracle 등을 사용하여 TDD방식으로 개발</dd>
+            </dl>
+          </div>
+        </article>
+      </section>
+
+      <footer id="footer">
+        <a name="contact"></a>
+        <div class="box-footer">
+          <h2></h2>
+          <div class="footer-overlay-container">
+            <h3 class="footer-title">봐주셔서 감사합니다 :) </h3>
+            <h3 class="footer-title-overlay">Thank You</h3>
+          <ul class="link-sns">
+            <li><a href="https://github.com/mmmzm/mmmzm">GitHub</a></li>
+            <li><a href="https://www.notion.so/c573f5c7c4cb4ee78d64306dd8366d6e?pvs=4">Notion</a></li>
+          </ul>
+          <p></p>
+        </div>
+      </footer>
+
+
+      <div class="modal-background">
+        <div class="modal">
+          <h3>Me</h3>
+          <h4></h4>
+          <p>
+            저는 개발자를 꿈꾸기 전 <br><span class="highlight">10년 동안 미용업계</span>에서 근무했습니다. <br>예약 시스템에서의 불편함을 경험하면서 <br>사용자 관점에서 더 나은 서비스를<br> 만들고 싶다는 목표를 가지게 되었습니다.<br> 
+            10년간의 사회생활을 통해<br> <span class="highlight">성실하고 책임감이 강하다</span>는 평가를 받았으며,<br> 
+            <span class="highlight">고객 중심의 문제 해결 경험</span>을 <br>웹 개발에 접목하여 사용자의 니즈를 파악하고 최적의 서비스를 제공하고 싶습니다.<br> 
+            또한, 낯선 기술에도 포기하지 않고<br> <span class="highlight">도전하는 자세</span>로 끊임없이 성장해 나가겠습니다.
+        </p>
+        
+          <button type="button" class="btn-close">Close</button>
+        </div>
+      </div>
+      <div class="modal-background">
+        <div class="modal">
+          <h3>Stack</h3>
+          <h4></h4>
+          <div class="tech-icons">
+            <div class="category">
+              <h5>Front-end</h5>
+              <div class="icon-row">
+                <div class="icon-item">
+                  <img src="src/icon/devicon--html5.svg" alt="HTML" />
+                  <span>HTML</span>
+                </div>
+                <div class="icon-item">
+                  <img src="src/icon/devicon--javascript.svg" alt="JavaScript" />
+                  <span>JavaScript</span>
+                </div>
+                <div class="icon-item">
+                  <img src="src/icon/devicon--css3.svg" alt="CSS" />
+                  <span>CSS</span>
+                </div>
+                <div class="icon-item">
+                  <img src="src/icon/devicon--bootstrap.svg" alt="Bootstrap" />
+                  <span>Bootstrap</span>
+                </div>
+                <div class="icon-item">
+                  <img src="src/icon/devicon--jquery.svg" alt="jQuery" />
+                  <span>jQuery</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="category">
+              <h5>Back-end</h5>
+              <div class="icon-row">
+                <div class="icon-item">
+                  <img src="src/icon/devicon--java.svg" alt="Java" />
+                  <span>Java</span>
+                </div>
+                <div class="icon-item">
+                  <img src="src/icon/devicon--python.svg" alt="Python" />
+                  <span>Python</span>
+                </div>
+                <div class="icon-item">
+                  <img src="src/icon/devicon--spring.svg" alt="Spring" />
+                  <span>Spring</span>
+                </div>
+                <div class="icon-item">
+                  <img src="src/icon/devicon--mybatis.svg" alt="MyBatis" />
+                  <span>MyBatis</span>
+                </div>
+                <div class="icon-item">
+                  <img src="src/icon/devicon--oracle.svg" alt="Oracle" />
+                  <span>Oracle</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="category">
+              <h5>Design</h5>
+              <div class="icon-row">
+                <div class="icon-item">
+                  <img src="src/icon/devicon--vscode.svg" alt="Visual Studio" />
+                  <span>Visual Studio</span>
+                </div>
+                <div class="icon-item">
+                  <img src="src/icon/devicon--photoshop.svg" alt="Photoshop" />
+                  <span>Photoshop</span>
+                </div>
+                <div class="icon-item">
+                  <img src="src/icon/devicon--figma.svg" alt="Figma" />
+                  <span>Figma</span>
+                </div>
+              </div>
+            </div>
+          
+            <div class="category">
+              <h5>Communication</h5>
+              <div class="icon-row">
+                <div class="icon-item">
+                  <img src="src/icon/devicon--github.svg" alt="Git" />
+                  <span>Git</span>
+                </div>
+                <div class="icon-item">
+                  <img src="src/icon/devicon--slack.svg" alt="Slack" />
+                  <span>Slack</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn-close">Close</button>
+          
+          
+          
+        </div>
+      </div>
+      
+      
+      <button onclick="moveToTop()" class="btn-moveTop">
+        <i class="fa-solid fa-chevron-up"></i>
+      </button>                 
+      <script src="index.js"></script>
+    </main>
+  </body>
+</html>

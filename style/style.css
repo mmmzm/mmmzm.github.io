@@ -1,0 +1,625 @@
+@font-face {
+  font-family: "GmarketBold";
+  src: url("../src/font/GmarketSansTTFBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GmarketMedium";
+  src: url("../src/font/GmarketSansTTFMedium.ttf") format("truetype");
+}
+
+* {
+  font-family: "GmarketMedium";
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../src/img/front_bg.jpg');
+  background-size: cover; /* 이미지가 화면 전체를 덮도록 설정 */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* 스크롤 시 배경이 고정되도록 설정 */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* header */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 45px 60px;
+  background-color: white;
+  color: #000000;
+  font-size: 18px;
+  /* border-bottom: 1px solid #e0e3fd; */
+  z-index: 10;
+}
+.nav-list {
+  display: flex;
+  justify-content: right;
+}
+.list-link {
+  margin-left: 35px;
+}
+.list-link:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+.btn-code {
+  padding: 8px 23px;
+  border-radius: 20px;
+  background-color: #000000;
+  border: solid 2px #000000;
+  color: white;
+}
+.btn-code:hover {
+  background-color: white;
+  border: solid 2px #000000;
+  color: #000000;
+  transition: 0.2s ease-out;
+}
+.bar-bg {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+.bar-ing {
+  position: absolute;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  width: 100%;
+}
+
+/* intro섹션 */
+.cont-intro {
+  height: 100vh; /* 화면의 전체 높이를 차지 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 수직 중앙 정렬 */
+  align-items: center; /* 수평 중앙 정렬 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  color: rgb(0, 0, 0); /* 텍스트 색상 조정 */
+}
+
+.txt-container {
+  position: relative;
+  display: inline-block;
+}
+
+.txt-title {
+  font-size: 50px;
+  line-height: 1.4;
+  position: relative;
+  font-family: 'GmarketSansTTFLight', sans-serif;
+}
+
+  .txt-overlay {
+    position: absolute;
+    top: -130px;
+    left: 132px;
+    color: #ffffff;
+    font-size: 10rem;
+    z-index: -1;
+    transform: translate(-10px, -10px);
+    white-space: nowrap;
+    font-weight: 900; 
+}
+
+.txt-title .bold {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.txt-title .light {
+  font-family: 'GmarketSansTTFLight', sans-serif; /* 얇은 글씨체 */
+  //font-weight: 300; /* 얇게 보이게 */
+}
+
+.btn-more {
+  position: absolute;
+  bottom: 36%;
+  padding: 8px 27px;
+  border-radius: 20px;
+  background-color: #000000;
+  border: solid 2px #000000;
+  color: white;
+  font-size: 18px;
+  margin-top: 40px;
+}
+.btn-more:hover {
+  background-color: white;
+  border: solid 2px #000000;
+  color: #000000;
+  transition: 0.7s ease-out;
+}
+
+/* aboutme섹션 */
+.section-about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 150px 0 250px 0;
+}
+.section-about h2 {
+  margin: 0 auto 100px;
+  display: inline-block;
+  font-family: "GmarketBold";
+  color: #000000;
+  font-size: 50px;
+}
+.cont-about {
+  display: flex;
+  justify-content: center; /* 수평으로 중앙 정렬 */
+  align-items: center; /* 수직으로 중앙 정렬 */
+  flex-direction: column; /* 수직으로 쌓이게 */
+}
+
+.slide-container {
+  text-align: center; /* 이미지 컨테이너 안에서 중앙 정렬 */
+}
+.slide-album {
+  position: relative;
+  width: 438px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 20px;
+  text-align: center; 
+}
+.slide-images {
+  position: relative;
+  display: flex;
+}
+.slide-images img {
+  width: 300px; /* 원하는 고정 너비 설정 */
+  height: 300px; /* 원하는 고정 높이 설정 */
+  object-fit: cover; /* 이미지 비율을 유지하면서 자르지 않고 꽉 채움 */
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-next,
+.btn-next:active,
+.btn-next:focus {
+  position: absolute;
+  padding: 8px 8px 7px 14px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 100%;
+}
+.btn-prev,
+.btn-prev:active,
+.btn-prev:focus {
+  position: absolute;
+  padding: 8px 14px 7px 8px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  font-size: 20px;
+  border-radius: 100%;
+}
+.btn-next:disabled,
+.btn-prev:disabled {
+  background-color: lightgray;
+}
+.btn-next:hover,
+.btn-prev:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #000000;
+  transition: 0.7s ease-out;
+}
+.btn-prev {
+  left: 18px;
+  top: 50%;
+}
+.btn-next {
+  right: 18px;
+  top: 50%;
+}
+.info-about {
+  margin: 0 0 0 60px;
+}
+.txt-about dt {
+}
+.txt-about {
+  margin-top: 55px;
+}
+.txt-about dd {
+  font-size: 22px; /* 텍스트 크기 조정 */
+  white-space: nowrap; /* 줄바꿈 방지 */
+  word-spacing: 30px; /* 단어 간격 조정 */
+  text-align: center; /* 중앙 정렬 */
+}
+.btn-about {
+  margin: 50px 0 50px 0px;
+  text-align: center;
+}
+.btn-about button {
+  width: 140px;
+  height: 140px;
+  margin: 0 45px 0 0;
+  border-radius: 100%;
+  background-color: #000000;
+  border: none;
+  color: white;
+  font-size: 23px;
+}
+.btn-about button:hover {
+  cursor: pointer;
+  background-color: #fdfdfd;
+  color: #000000;
+  border: 2px solid #000000; 
+  //transition: 0.5s ease-out;
+}
+.btn-about button img {
+  width: 43px;
+  margin: 10px auto;
+}
+
+/* project */
+.section-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 150px 0 250px 0;
+  //margin-bottom: 180px;
+  background-color: #ffffff;
+}
+
+.section-project h2 {
+  margin: 0 auto;
+  display: inline-block;
+  font-family: "GmarketBold";
+  color: #000000;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.box-project {
+  margin: 30px auto;
+  display: flex;
+  padding: 136px;
+  width: 1000px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 2px 7px 51px rgb(0 0 0 / 49%);
+}
+.img-project {
+  border-radius: 15px;
+  width: 501px;
+  margin-bottom: 25px;
+  border: solid 3px #000000;
+}
+
+.btn-detail {
+  cursor: pointer;
+  padding: 10px 172px;
+  border-radius: 15px;
+  border: none;
+  background-color: #000000;
+  border: solid 2px #000000;
+  color: white;
+  font-size: 20px;
+}
+.btn-detail:hover {
+  background-color: white;
+  border: solid 2px #000000;
+  color: #000000;
+}
+.txt-project {
+  text-align: left;
+  margin: 0px 0 0 24px;
+}
+.txt-project h3 {
+  font-family: "GmarketBold";
+  font-size: 35px;
+  line-height: 35px;
+  margin-bottom: 30px;
+  padding: 10px 2px;  
+  color: #333333; 
+}
+.txt-project dl dt {
+  font-family: "GmarketBold";
+  color: #000000;
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+.txt-project dl dd {
+  font-size: 20px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+}
+
+/* footer */
+#footer {
+  text-align: center;
+  height: 100px;
+}
+#footer h2 {
+  font-family: "GmarketBold";
+  color: #000000;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.box-footer {
+  width: 100%;
+  padding: 160px 0 111px 0;
+}
+
+
+.box-footer p {
+  color: #000000;
+  margin-top: 50px;
+}
+.footer-overlay-container {
+  position: relative;
+  text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+.footer-title {
+  font-size: 50px;
+  font-family: 'GmarketSansTTFLight', sans-serif;
+  // font-weight: bold;
+  color: #000;
+  margin: 130px;
+  position: relative;
+}
+
+.footer-title-overlay {
+  position: absolute;
+  top: -7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 9rem;
+  color: #ffffff;
+  font-weight: 900;
+  z-index: -1;
+  white-space: nowrap;
+}
+
+/* link */
+
+.link-sns ul {
+  display: inline-block;
+  margin: 30px auto;
+}
+
+.link-sns li {
+  display: inline-block;
+  padding: 35px;
+  font-size: 20px;
+}
+
+.link-sns a {
+  position: relative;
+  color: black; /* 기본 텍스트 색상 블랙 */
+  text-decoration: none;
+}
+
+.link-sns a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 139%;
+  background-color: black; /* 네모박스 색상 검정 */
+  transform-origin: 100% 50%;
+  transform: scale(0, 1);
+  top: -6px; /* 네모박스 상단 위치 조정 */
+  left: 0px; /* 네모박스 좌측 위치 조정 */
+  transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1);
+  z-index: -1; /* 박스가 텍스트 뒤로 가게 */
+}
+
+.link-sns a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black; /* 기본 밑줄 색상 블랙 */
+  left: 0;
+  bottom: -3px;
+  transform-origin: 0% 50%;
+  transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1) 0.2s;
+}
+
+.link-sns a span {
+  position: relative;
+}
+
+.link-sns a:hover:before {
+  transform: scale(1);
+  transform-origin: 0 50%;
+  transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1) 0.2s;
+}
+
+.link-sns a:hover:after {
+  transform: scale(0, 1);
+  transform-origin: 100% 50%;
+  transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1) 0s;
+}
+
+.link-sns a:hover {
+  color: white; /* 마우스를 올렸을 때 텍스트 색상 화이트 */
+}
+
+
+
+/* 모달 */
+.modal-background {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.modal {
+  position: absolute;
+  top: 20%;
+  width: 550px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.modal h3 {
+  margin: 40px 0 7px 0;
+  font-size: 25px;
+  color: #000000;
+  font-family: "GmarketBold";
+}
+.modal h4 {
+  font-size: 20px;
+}
+.modal img {
+  margin: 5px auto;
+}
+
+.btn-close {
+  padding: 8px 140px;
+  margin: 25px 0 35px 0;
+  background-color: #000000;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+.btn-close:hover {
+  background-color: #e7e7e7;
+  color: #000000;
+  //transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+.tech-icons {
+  margin-bottom: 20px;
+}
+
+.category {
+  margin-bottom: 0px;
+}
+
+.icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* 아이콘 간 간격 */
+  justify-content: center; /* 중앙 정렬 */
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column; /* 아이콘 위, 텍스트 아래 배치 */
+  align-items: center;
+  text-align: center;
+}
+
+.icon-item img {
+  width: 45px; /* 아이콘 크기 */
+  height: auto;
+}
+
+.icon-item span {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.tech-icons .category h5 {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 10px;
+  background-color: #e7e7e7b5;
+  padding: 9px 15px;
+  border-radius: 6px;
+  display: inline-block;
+}
+.modal p {
+  margin: 40px auto;
+  width: 469px;
+  font-size: 23px;
+  line-height: 46px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+
+.highlight {
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: #ffeb3b;
+  color: #000000;
+  padding: 4px 4px;
+  border-radius: 5px;
+}
+
+/* Top 버튼 */
+.btn-moveTop {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff; /* 배경을 흰색으로 변경 */
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000; /* 화살표 색상을 검정으로 변경 */
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 회색 그림자 추가 */
+}
+
+.btn-moveTop:hover {
+  background-color: #f0f0f0; /* 호버 시 배경을 약간 어두운 회색으로 변경 */
+}
+
+/* 애니메이션 정의 */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px); /* 위로 이동하는 거리 */
+  }
+  60% {
+    transform: translateY(-5px); /* 약간 더 이동 */
+  }
+}
+
+/* .scroll-down 클래스에 애니메이션과 그림자 적용 */
+.scroll-down {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 50px; /* 아이콘 크기 조정 */
+  color: #ffffff;
+  animation: bounce 1.5s infinite; /* 애니메이션 적용 */
+  text-shadow: 0 4px 15px rgb(0 0 0 / 50%);
+}
+
+.scroll-down:hover {
+  color: #ffffff; /* 호버 시 색상 변경 (효과 없음) */
+  cursor: default; /* 호버 시에도 기본 커서로 유지 */
+}
+
+
