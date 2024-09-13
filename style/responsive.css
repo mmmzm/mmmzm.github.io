@@ -1,0 +1,914 @@
+/* */
+/* 모바일 화면 (480px 이하) */
+@media (max-width: 480px) {
+    body {
+      background-size: cover; /* 필요에 따라 'contain'으로 변경할 수 있음 */
+    }
+  }
+  
+  /* 태블릿 화면 (481px - 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    body {
+      background-size: cover; /* 필요에 따라 'contain'으로 변경할 수 있음 */
+    }
+  }
+  
+  /* 노트북 화면 (769px - 1024px) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      background-size: cover; /* 필요에 따라 'contain'으로 변경할 수 있음 */
+    }
+  }
+  
+  /* 데스크탑 화면 (1025px 이상) */
+  @media (min-width: 1025px) {
+    body {
+      background-size: cover; /* 필요에 따라 'contain'으로 변경할 수 있음 */
+    }
+  }
+
+/* header */
+@media (max-width: 480px) {
+    #header {
+      padding: 20px 15px;
+      font-size: 16px;
+      width: 100%;
+    }
+  
+    .nav-list {
+      display: flex; /* 가로 방향 정렬을 위해 flex 사용 */
+      flex-direction: row; /* 한 줄에 배치 */
+      justify-content: flex-end; /* 오른쪽 정렬 */
+      align-items: center; /* 수직 중앙 정렬 */
+      padding: 0; /* 패딩 제거 */
+      margin: 0; /* 마진 제거 */
+      width: 100%; /* 전체 너비 사용 */
+      box-sizing: border-box; /* 박스 사이징 조정 */
+    }
+  
+    .list-link {
+      margin-left: 15px; /* 항목 간 간격 추가 */
+      margin-bottom: 0; /* 하단 마진 제거 */
+    }
+  
+    .btn-code {
+      padding: 6px 16px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 1024px) {
+    #header {
+      padding: 30px 30px;
+      font-size: 17px;
+    }
+  
+    .nav-list {
+      flex-direction: row;
+    }
+  
+    .list-link {
+      margin-left: 20px;
+    }
+  
+    .btn-code {
+      padding: 7px 20px;
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    #header {
+      padding: 45px 60px;
+      font-size: 18px;
+    }
+  
+    .nav-list {
+      flex-direction: row;
+    }
+  
+    .list-link {
+      margin-left: 35px;
+    }
+  
+    .btn-code {
+      padding: 8px 23px;
+      font-size: 16px;
+    }
+  }
+
+
+  /* intro섹션 */
+  @media (max-width: 480px) {
+    .cont-intro {
+      width: 100%;
+      padding: 20px 10px; /* 패딩 조정 */
+      text-align: center; /* 텍스트를 가운데 정렬 */
+    }
+  
+    .txt-title {
+      font-size: 27px; /* 폰트 크기 조정 */
+      margin: 0 auto; /* 중앙 정렬 */
+      display: inline-block; /* 중앙 정렬을 위한 인라인 블록 설정 */
+    }
+
+    .txt-title .bold {
+        font-weight: bold;
+        font-size: 40px;
+    }
+  
+    .txt-overlay {
+      font-size: 4.5rem; /* 오버레이 폰트 크기 조정 */
+      //position: relative; /* 위치 조정을 위한 relative 설정 */
+      top: -50px; /* 오버레이 위치 조정 */
+      left: 50%; /* 가운데 정렬 */
+      transform: translateX(-50%); /* 가운데 정렬 유지 */
+    }
+  
+    .btn-more {
+      padding: 6px 20px; /* 버튼 패딩 조정 */
+      font-size: 16px; /* 버튼 폰트 크기 조정 */
+      bottom: 25%; /* 버튼 위치 조정 */
+    }
+  
+    .scroll-down {
+      position: absolute; /* 절대 위치 지정 */
+      bottom: 10px; /* 화면 하단에서 10px 떨어지게 설정 */
+      left: 50%; /* 가운데 정렬 */
+      transform: translateX(-50%); /* 가운데 정렬 유지 */
+      font-size: 50px; /* 아이콘 크기 조정 */
+    }
+  }
+  
+  /* 태블릿에서의 스타일 (481px 이상 1024px 이하) */
+  @media (min-width: 481px) and (max-width: 1024px) {
+    .cont-intro {
+      padding: 30px 20px; /* 패딩 조정 */
+    }
+  
+    .txt-title {
+      font-size: 40px; /* 폰트 크기 조정 */
+    }
+  
+    .txt-overlay {
+      font-size: 8rem; /* 오버레이 폰트 크기 조정 */
+      top: -100px; /* 오버레이 위치 조정 */
+      left: 50%; /* 가운데 정렬 */
+      transform: translate(-50%, -10px); /* 가운데 정렬 유지 */
+    }
+  
+    .btn-more {
+      padding: 7px 23px; /* 버튼 패딩 조정 */
+      font-size: 17px; /* 버튼 폰트 크기 조정 */
+      bottom: 30%; /* 버튼 위치 조정 */
+    }
+  }
+  
+  /* 노트북에서의 스타일 (1025px 이상) */
+  @media (min-width: 1025px) {
+    .cont-intro {
+      height: 100vh; /* 원래 높이 유지 */
+    }
+  
+    .txt-title {
+      font-size: 50px; /* 원래 폰트 크기 유지 */
+    }
+  
+    .txt-overlay {
+      font-size: 10rem; /* 원래 오버레이 폰트 크기 유지 */
+      top: -130px; /* 원래 오버레이 위치 유지 */
+      left: 132px; /* 원래 오버레이 위치 유지 */
+      transform: translate(-10px, -10px); /* 원래 오버레이 위치 유지 */
+    }
+  
+    .btn-more {
+      padding: 8px 27px; /* 원래 버튼 패딩 유지 */
+      font-size: 18px; /* 원래 버튼 폰트 크기 유지 */
+      bottom: 36%; /* 원래 버튼 위치 유지 */
+    }
+  }
+
+
+/* aboutme섹션 */
+    @media (max-width: 480px) {
+        .section-about {
+          padding: 80px 20px; 
+          background-color: white;
+          width: 100%;
+        }
+      
+        .section-about h2 {
+          font-size: 30px; 
+          margin-bottom: 50px; 
+        }
+      
+        .slide-album {
+          width: 100%; 
+          height: auto; 
+        }
+      
+        .slide-images img {
+          width: 70%; 
+          height: auto; 
+        }
+      
+        .btn-next,
+        .btn-prev {
+          padding: 6px 6px; 
+          font-size: 16px; 
+        }
+      
+        .btn-prev {
+          left: 10px; 
+        }
+      
+        .btn-next {
+          right: 10px; 
+        }
+      
+        .info-about {
+          margin-left: 0px; 
+        }
+
+        .txt-about {
+            margin-top: 20px;
+        }
+      
+        .txt-about dd {
+          font-size: 12px; 
+          word-spacing: 2px; 
+          overflow-wrap: break-word; /* 긴 단어를 줄 바꿈 */
+        }
+      
+        .txt-about dd::before {
+          content: "";
+          display: block;
+          height: 1em;
+          visibility: hidden;
+        }
+      
+        .btn-about button {
+          width: 100px; 
+          height: 100px; 
+          font-size: 18px; 
+          margin: 0 20px 0 0; 
+        }
+      
+        .btn-about button img {
+          width: 30px; 
+        }
+      }
+  
+  @media (min-width: 481px) and (max-width: 1024px) {
+    .section-about {
+      padding: 100px 30px; 
+    }
+  
+    .section-about h2 {
+      font-size: 40px; 
+      margin-bottom: 70px; 
+    }
+  
+    .slide-album {
+      width: 80%; 
+      height: auto; 
+    }
+  
+    .slide-images img {
+      width: 100%; 
+      height: auto; 
+    }
+  
+    .btn-next,
+    .btn-prev {
+      padding: 7px 7px;
+      font-size: 18px; 
+    }
+  
+    .btn-prev {
+      left: 15px; 
+    }
+  
+    .btn-next {
+      right: 15px; 
+    }
+  
+    .info-about {
+      margin-left: 40px; 
+    }
+  
+    .txt-about dd {
+      font-size: 20px; 
+      word-spacing: 25px; 
+    }
+  
+    .btn-about button {
+      width: 120px; 
+      height: 120px; 
+      font-size: 20px; 
+      margin: 0 30px 0 0; 
+    }
+  
+    .btn-about button img {
+      width: 35px; 
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .section-about {
+      padding: 150px 0 250px 0; 
+    }
+  
+    .section-about h2 {
+      font-size: 50px; 
+      margin-bottom: 100px; 
+    }
+  
+    .slide-album {
+      width: 438px; 
+      height: 300px; 
+    }
+  
+    .slide-images img {
+      width: 300px; 
+      height: 300px; 
+    }
+  
+    .btn-next,
+    .btn-prev {
+      padding: 8px 8px;
+      font-size: 18px; 
+    }
+  
+    .btn-prev {
+      left: 18px; 
+    }
+  
+    .btn-next {
+      right: 18px; 
+    }
+  
+    .info-about {
+      margin-left: 60px;
+    }
+  
+    .txt-about dd {
+      font-size: 22px; 
+      word-spacing: 30px; 
+    }
+  
+    .btn-about button {
+      width: 140px;
+      height: 140px; 
+      font-size: 23px; 
+      margin: 0 45px 0 0; 
+    }
+  
+    .btn-about button img {
+      width: 43px;
+    }
+  }
+
+
+
+  /* project */
+/* 모바일에서의 스타일 (480px 이하) */
+@media (max-width: 480px) {
+    .section-project {
+        padding: 40px 10px; /* 패딩 조정 */
+        background-color: white;
+        width: 100%;
+    }
+
+    .section-project h2 {
+        font-size: 30px; /* 폰트 크기 조정 */
+        margin-bottom: 20px; /* 여백 조정 */
+    }
+
+    .box-project {
+        margin: 0 auto; /* 중앙 정렬 */
+        padding: 0; /* 패딩 제거 */
+        width: 100%; /* 너비를 100%로 설정하여 모바일 화면에 맞춤 */
+        box-shadow: none; /* 모바일에서는 그림자 제거 */
+        display: flex;
+        flex-direction: column; /* 세로 방향으로 배치 */
+        align-items: center; /* 수평 가운데 정렬 */
+        text-align: center; /* 텍스트 가운데 정렬 */
+    }
+
+    .img-project {
+        width: 100%; /* 이미지 너비를 100%로 설정하여 컨테이너에 맞추기 */
+        height: auto; /* 비율 유지 */
+        margin-bottom: 10px; /* 여백 조정 */
+        border: solid 2px #000000;
+    }
+
+    .btn-detail {
+        padding: 10px 20px; /* 버튼 패딩 조정 */
+        font-size: 16px; /* 버튼 폰트 크기 조정 */
+        margin-bottom: 10px; /* 버튼과 텍스트 사이 여백 조정 */
+        display: block; /* 버튼을 블록 요소로 설정하여 가운데 정렬 */
+        margin-left: auto; /* 왼쪽 여백 자동 설정 */
+        margin-right: auto; /* 오른쪽 여백 자동 설정 */
+    }
+
+    .txt-project {
+        width: 100%; /* 텍스트 박스의 너비를 100%로 설정 */
+    }
+
+    .txt-project h3 {
+        font-size: 24px; /* 폰트 크기 조정 */
+        margin-bottom: 15px; /* 여백 조정 */
+    }
+
+    .txt-project dl {
+        margin: 0; /* dl의 기본 여백 제거 */
+    }
+
+    .txt-project dl dt {
+        font-size: 18px; /* 폰트 크기 조정 */
+        margin-bottom: 4px; /* 여백 조정 */
+    }
+
+    .txt-project dl dd {
+        font-size: 16px; /* 폰트 크기 조정 */
+        margin-bottom: 15px; /* 여백 조정 */
+    }
+}
+  
+  /* 태블릿에서의 스타일 (481px 이상 1024px 이하) */
+  @media (min-width: 481px) and (max-width: 1024px) {
+    .section-project {
+      padding: 100px 30px; /* 패딩 조정 */
+    }
+  
+    .section-project h2 {
+      font-size: 40px; /* 폰트 크기 조정 */
+      margin-bottom: 30px; /* 여백 조정 */
+    }
+  
+    .box-project {
+      margin: 30px auto; /* 여백 조정 */
+      padding: 30px; /* 패딩 조정 */
+      width: 80%; /* 너비 조정 */
+    }
+  
+    .img-project {
+      width: 100%; /* 이미지 너비를 100%로 설정하여 컨테이너에 맞추기 */
+      margin-bottom: 20px; /* 여백 조정 */
+    }
+  
+    .btn-detail {
+      padding: 10px 40px; /* 버튼 패딩 조정 */
+      font-size: 18px; /* 버튼 폰트 크기 조정 */
+    }
+  
+    .txt-project {
+      margin: 0; /* 여백 조정 */
+    }
+  
+    .txt-project h3 {
+      font-size: 28px; /* 폰트 크기 조정 */
+      margin-bottom: 20px; /* 여백 조정 */
+    }
+  
+    .txt-project dl dt {
+      font-size: 20px; /* 폰트 크기 조정 */
+      margin-bottom: 6px; /* 여백 조정 */
+    }
+  
+    .txt-project dl dd {
+      font-size: 18px; /* 폰트 크기 조정 */
+      margin-bottom: 20px; /* 여백 조정 */
+    }
+  }
+  
+  /* 노트북에서의 스타일 (1025px 이상) */
+  @media (min-width: 1025px) {
+    .section-project {
+      padding: 150px 0 250px 0; /* 원래 패딩 유지 */
+    }
+  
+    .section-project h2 {
+      font-size: 50px; /* 원래 폰트 크기 유지 */
+      margin-bottom: 40px; /* 원래 여백 유지 */
+    }
+  
+    .box-project {
+      margin: 30px auto; /* 원래 여백 유지 */
+      padding: 136px; /* 원래 패딩 유지 */
+      width: 1000px; /* 원래 너비 유지 */
+      box-shadow: 2px 7px 51px rgb(0 0 0 / 49%); /* 원래 그림자 유지 */
+    }
+  
+    .img-project {
+      width: 501px; /* 원래 이미지 너비 유지 */
+      margin-bottom: 25px; /* 원래 여백 유지 */
+    }
+  
+    .btn-detail {
+      padding: 10px 172px; /* 원래 버튼 패딩 유지 */
+      font-size: 20px; /* 원래 버튼 폰트 크기 유지 */
+    }
+  
+    .txt-project h3 {
+      font-size: 35px; /* 원래 폰트 크기 유지 */
+      margin-bottom: 30px; /* 원래 여백 유지 */
+    }
+  
+    .txt-project dl dt {
+      font-size: 22px; /* 원래 폰트 크기 유지 */
+      margin-bottom: 6px; /* 원래 여백 유지 */
+    }
+  
+    .txt-project dl dd {
+      font-size: 20px; /* 원래 폰트 크기 유지 */
+      margin-bottom: 25px; /* 원래 여백 유지 */
+    }
+  }
+
+
+/* footer */
+/* 모바일에서의 스타일 (480px 이하) */
+@media (max-width: 480px) {
+    #footer {
+      height: auto; /* 높이를 자동으로 조정 */
+      padding: 20px 10px; /* 패딩 조정 */
+    }
+  
+    #footer h2 {
+      font-size: 30px; /* 폰트 크기 조정 */
+      margin-bottom: 20px; /* 여백 조정 */
+    }
+  
+    .box-footer {
+      padding: 80px 0 50px 0; /* 패딩 조정 */
+    }
+  
+    .footer-title {
+      font-size: 30px; /* 폰트 크기 조정 */
+      margin: 30px 10px; /* 여백 조정 */
+    }
+  
+    .footer-title-overlay {
+      font-size: 4rem; /* 폰트 크기 조정 */
+      top: 20%; /* 위치 조정 */
+    }
+  
+    .footer-overlay-container {
+      text-align: center; /* 텍스트 중앙 정렬 */
+    }
+  
+    .box-footer p {
+      margin-top: 20px; /* 여백 조정 */
+    }
+  }
+  
+  /* 태블릿에서의 스타일 (481px 이상 1024px 이하) */
+  @media (min-width: 481px) and (max-width: 1024px) {
+    #footer {
+      height: auto; /* 높이를 자동으로 조정 */
+      padding: 30px 20px; /* 패딩 조정 */
+    }
+  
+    #footer h2 {
+      font-size: 40px; /* 폰트 크기 조정 */
+      margin-bottom: 30px; /* 여백 조정 */
+    }
+  
+    .box-footer {
+      padding: 120px 0 80px 0; /* 패딩 조정 */
+    }
+  
+    .footer-title {
+      font-size: 40px; /* 폰트 크기 조정 */
+      margin: 50px 20px; /* 여백 조정 */
+    }
+  
+    .footer-title-overlay {
+      font-size: 7rem; /* 폰트 크기 조정 */
+      top: 10%; /* 위치 조정 */
+    }
+  
+    .footer-overlay-container {
+      text-align: center; /* 텍스트 중앙 정렬 */
+    }
+  
+    .box-footer p {
+      margin-top: 30px; /* 여백 조정 */
+    }
+  }
+  
+  /* 노트북에서의 스타일 (1025px 이상) */
+  @media (min-width: 1025px) {
+    #footer {
+      height: 100px; /* 원래 높이 유지 */
+      padding: 160px 0 111px 0; /* 원래 패딩 유지 */
+    }
+  
+    #footer h2 {
+      font-size: 50px; /* 원래 폰트 크기 유지 */
+      margin-bottom: 50px; /* 원래 여백 유지 */
+    }
+  
+    .box-footer {
+      padding: 160px 0 111px 0; /* 원래 패딩 유지 */
+    }
+  
+    .footer-title {
+      font-size: 50px; /* 원래 폰트 크기 유지 */
+      margin: 130px; /* 원래 여백 유지 */
+    }
+  
+    .footer-title-overlay {
+      font-size: 9rem; /* 원래 폰트 크기 유지 */
+      top: -7%; /* 원래 위치 유지 */
+    }
+  
+    .footer-overlay-container {
+      text-align: center; /* 텍스트 중앙 정렬 */
+    }
+  
+    .box-footer p {
+      margin-top: 50px; /* 원래 여백 유지 */
+    }
+  }
+ 
+  /* link */
+  /* 모바일에서의 스타일 (480px 이하) */
+@media (max-width: 480px) {
+    .link-sns ul {
+      margin: 15px auto;
+    }
+  
+    .link-sns li {
+      padding: 15px;
+      font-size: 16px;
+    }
+  
+    .link-sns a:before {
+      height: 120%;
+      top: -4px;
+    }
+  
+    .link-sns a:after {
+      height: 1px;
+      bottom: -2px;
+    }
+  }
+  
+  /* 태블릿에서의 스타일 (481px 이상 1024px 이하) */
+  @media (min-width: 481px) and (max-width: 1024px) {
+    .link-sns ul {
+      margin: 25px auto;
+    }
+  
+    .link-sns li {
+      padding: 25px;
+      font-size: 18px;
+    }
+  
+    .link-sns a:before {
+      height: 130%;
+      top: -5px;
+    }
+  
+    .link-sns a:after {
+      height: 1.5px;
+      bottom: -2px;
+    }
+  }
+  
+  /* 노트북에서의 스타일 (1025px 이상) */
+  @media (min-width: 1025px) {
+    .link-sns ul {
+      display: inline-block;
+      margin: 30px auto;
+    }
+  
+    .link-sns li {
+      display: inline-block;
+      padding: 35px;
+      font-size: 20px;
+    }
+  
+    .link-sns a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 139%;
+      background-color: black;
+      transform-origin: 100% 50%;
+      transform: scale(0, 1);
+      top: -6px;
+      left: 0px;
+      transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1);
+      z-index: -1;
+    }
+  
+    .link-sns a:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: black;
+      left: 0;
+      bottom: -3px;
+      transform-origin: 0% 50%;
+      transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1) 0.2s;
+    }
+  
+    .link-sns a:hover:before {
+      transform: scale(1);
+      transform-origin: 0 50%;
+      transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1) 0.2s;
+    }
+  
+    .link-sns a:hover:after {
+      transform: scale(0, 1);
+      transform-origin: 100% 50%;
+      transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1) 0s;
+    }
+  
+    .link-sns a:hover {
+      color: white;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .link-sns ul {
+      display: inline-block;
+      margin: 30px auto;
+    }
+  
+    .link-sns li {
+      display: inline-block;
+      padding: 35px;
+      font-size: 20px;
+    }
+  
+    .link-sns a {
+      position: relative;
+      color: black;
+      text-decoration: none;
+    }
+  
+    .link-sns a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 139%;
+      background-color: black;
+      transform-origin: 100% 50%;
+      transform: scale(0, 1);
+      top: -6px;
+      left: 0px;
+      transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1);
+      z-index: -1;
+    }
+  
+    .link-sns a:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: black;
+      left: 0;
+      bottom: -3px;
+      transform-origin: 0% 50%;
+      transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1) 0.2s;
+    }
+  
+    .link-sns a:hover:before {
+      transform: scale(1);
+      transform-origin: 0 50%;
+      transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1) 0.2s;
+    }
+  
+    .link-sns a:hover:after {
+      transform: scale(0, 1);
+      transform-origin: 100% 50%;
+      transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1) 0s;
+    }
+  
+    .link-sns a:hover {
+      color: white;
+    }
+  }
+
+  
+/* 모달 */
+/* 모바일에서의 스타일 (480px 이하) */
+@media (max-width: 480px) {
+    .modal {
+        width: 90%; /* 화면 폭의 90%로 설정 */
+        max-height: 80vh; /* 최대 높이를 화면의 80%로 설정 */
+        overflow-y: auto; /* 내용이 넘칠 경우 스크롤 추가 */
+        top: 10%; /* 모달 위치 조정 */
+        padding: 15px; /* 여백 조정 */
+    }
+
+    .modal h3 {
+        font-size: 18px; /* 폰트 크기 조정 */
+        margin-bottom: 10px; /* 제목과 본문 사이 여백 조정 */
+    }
+
+    .modal h4 {
+        font-size: 14px; /* 폰트 크기 조정 */
+    }
+
+    .btn-close {
+        padding: 8px 20px; /* 버튼 패딩 조정 */
+        font-size: 14px; /* 버튼 폰트 크기 조정 */
+    }
+
+    .tech-icons {
+        margin-bottom: 10px; /* 마진 조정 */
+    }
+
+    .tech-icons .category h5 {
+        font-size: 1rem; /* 폰트 크기 조정 */
+        padding: 4px 8px; /* 패딩 조정 */
+        margin-top: 10px;
+    }
+
+    .modal p {
+        width: auto; /* 너비를 자동으로 조정 */
+        font-size: 16px; /* 폰트 크기 조정 */
+        line-height: 24px; /* 줄 높이 조정 */
+    }
+}
+
+  
+  /* 태블릿에서의 스타일 (481px 이상 1024px 이하) */
+  @media (min-width: 481px) and (max-width: 1024px) {
+    .modal {
+      width: 70%; /* 화면 폭의 70%로 설정 */
+      top: 15%; /* 모달 위치 조정 */
+      padding: 30px; /* 여백 추가 */
+      overflow-y: auto;
+    }
+  
+    .modal h3 {
+      font-size: 22px; /* 폰트 크기 조정 */
+    }
+  
+    .modal h4 {
+      font-size: 18px; /* 폰트 크기 조정 */
+    }
+  
+    .btn-close {
+      padding: 8px 80px; /* 버튼 패딩 조정 */
+    }
+  
+    .tech-icons {
+      margin-bottom: 15px; /* 마진 조정 */
+    }
+  
+    .tech-icons .category h5 {
+      font-size: 1.2rem; /* 폰트 크기 조정 */
+      padding: 8px 12px; /* 패딩 조정 */
+    }
+  
+    .modal p {
+      width: auto; /* 너비를 자동으로 조정 */
+      font-size: 20px; /* 폰트 크기 조정 */
+      line-height: 40px; /* 줄 높이 조정 */
+    }
+  }
+  
+  /* 노트북에서의 스타일 (1025px 이상) */
+  @media (min-width: 1025px) {
+    .modal {
+      width: 550px; /* 기본 너비 설정 */
+      top: 20%; /* 모달 위치 조정 */
+      overflow-y: auto;
+    }
+  
+    .modal h3 {
+      font-size: 25px; /* 폰트 크기 설정 */
+    }
+  
+    .modal h4 {
+      font-size: 20px; /* 폰트 크기 설정 */
+    }
+  
+    .btn-close {
+      padding: 8px 140px; /* 버튼 패딩 설정 */
+    }
+  
+    .tech-icons {
+      margin-bottom: 20px; /* 마진 설정 */
+    }
+  
+    .tech-icons .category h5 {
+      font-size: 1.3rem; /* 폰트 크기 설정 */
+      padding: 9px 15px; /* 패딩 설정 */
+    }
+  
+    .modal p {
+      width: 469px; /* 기본 너비 설정 */
+      font-size: 23px; /* 폰트 크기 설정 */
+      line-height: 46px; /* 줄 높이 설정 */
+    }
+  }

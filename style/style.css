@@ -567,6 +567,19 @@ body::-webkit-scrollbar {
   padding: 4px 4px;
   border-radius: 5px;
 }
+.modal::-webkit-scrollbar {
+  width: 6px; /* 스크롤바 너비를 줄여서 더 슬림하게 */
+  height: 30px; /* 스크롤바의 세로 길이를 줄임 */
+}
+
+.modal::-webkit-scrollbar-thumb {
+  height: 30px; /* 스크롤바 막대의 세로 길이 */
+  border-radius: 4px;
+}
+
+.modal::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
 
 /* Top 버튼 */
 .btn-moveTop {
@@ -621,5 +634,3 @@ body::-webkit-scrollbar {
   color: #ffffff; /* 호버 시 색상 변경 (효과 없음) */
   cursor: default; /* 호버 시에도 기본 커서로 유지 */
 }
-
-
