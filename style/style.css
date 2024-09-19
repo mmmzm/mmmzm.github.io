@@ -292,7 +292,7 @@ body::-webkit-scrollbar {
   padding: 136px;
   width: 1000px;
   border-radius: 20px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   box-shadow: 2px 7px 51px rgb(0 0 0 / 49%);
 }
 .img-project {
@@ -574,11 +574,12 @@ body::-webkit-scrollbar {
 
 .modal::-webkit-scrollbar-thumb {
   height: 30px; /* 스크롤바 막대의 세로 길이 */
+  background-color: #000000; /* 스크롤바 막대 색상 */
   border-radius: 4px;
 }
 
 .modal::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
+  background-color: #ffffff;
 }
 
 /* Top 버튼 */
