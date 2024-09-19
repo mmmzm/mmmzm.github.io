@@ -375,7 +375,7 @@
 /* 모바일에서의 스타일 (480px 이하) */
 @media (max-width: 480px) {
     .section-project {
-        padding: 40px 10px; /* 패딩 조정 */
+        padding: 40px 20px; /* 패딩 조정 */
         background-color: white;
         width: 100%;
     }
