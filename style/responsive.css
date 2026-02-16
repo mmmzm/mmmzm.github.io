@@ -176,8 +176,8 @@
   
     .txt-overlay {
       font-size: 10rem; /* 원래 오버레이 폰트 크기 유지 */
-      top: -130px; /* 원래 오버레이 위치 유지 */
-      left: 132px; /* 원래 오버레이 위치 유지 */
+      top: -103px; /* 원래 오버레이 위치 유지 */
+      left: 230px; /* 원래 오버레이 위치 유지 */
       transform: translate(-10px, -10px); /* 원래 오버레이 위치 유지 */
     }
   
@@ -316,7 +316,7 @@
   
   @media (min-width: 1025px) {
     .section-about {
-      padding: 150px 0 250px 0; 
+      padding: 150px 0 150px 0; 
     }
   
     .section-about h2 {

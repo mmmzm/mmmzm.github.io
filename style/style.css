@@ -146,133 +146,162 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: white;
-  padding: 150px 0 250px 0;
-}
-.section-about h2 {
-  margin: 0 auto 100px;
-  display: inline-block;
-  font-family: "GmarketBold";
-  color: #000000;
-  font-size: 50px;
-}
-.cont-about {
-  display: flex;
-  justify-content: center; /* 수평으로 중앙 정렬 */
-  align-items: center; /* 수직으로 중앙 정렬 */
-  flex-direction: column; /* 수직으로 쌓이게 */
+  background-color: #fff;
+  padding: 150px 0 150px 0;
 }
 
-.slide-container {
-  text-align: center; /* 이미지 컨테이너 안에서 중앙 정렬 */
+.section-about h2 {
+  margin: 0 auto 70px;
+  display: inline-block;
+  font-family: "GmarketBold";
+  color: #000;
+  font-size: 50px;
 }
-.slide-album {
-  position: relative;
-  width: 438px;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 20px;
-  text-align: center; 
-}
-.slide-images {
-  position: relative;
-  display: flex;
-}
-.slide-images img {
-  width: 300px; /* 원하는 고정 너비 설정 */
-  height: 300px; /* 원하는 고정 높이 설정 */
-  object-fit: cover; /* 이미지 비율을 유지하면서 자르지 않고 꽉 채움 */
-  display: block;
+
+.about-wrap {
+  width: min(1080px, calc(100% - 48px));
   margin: 0 auto;
 }
 
-.btn-next,
-.btn-next:active,
-.btn-next:focus {
+.about-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+.profile-circle {
+  flex: 0 0 auto;
+  width: 210px;
+  height: 210px;
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: 0px 0px 37px rgb(0 0 0 / 49%)
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.about-right {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.about-summary {
+  font-size: 35px;
+  line-height: 1.7;
+  color: #111;
+  margin: 18px 0 14px 0;
+}
+
+.strength-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 999px;
+  border: 0.5px solid #ffffff;
+  background: #fff;
+  font-size: 22px; 
+  color: #000; 
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 35%)
+}
+
+/* 2x2 stack cards */
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.stack-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 26px 26px 22px 26px;
+  position: relative;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.10);
+}
+
+.stack-card::before {
+  content: "";
   position: absolute;
-  padding: 8px 8px 7px 14px;
-  background-color: #000000;
-  color: white;
-  border: none;
-  font-size: 18px;
-  border-radius: 100%;
+  left: 0;
+  top: 22px;
+  bottom: 22px;
+  width: 4px;
+  background: #000000; 
+  border-radius: 99px;
 }
-.btn-prev,
-.btn-prev:active,
-.btn-prev:focus {
-  position: absolute;
-  padding: 8px 14px 7px 8px;
-  background-color: #000000;
-  color: white;
-  border: none;
-  font-size: 20px;
-  border-radius: 100%;
+
+.stack-title {
+  margin: 0 0 14px 0;
+  padding-left: 12px;
+  //font-family: "GmarketBold";
+  font-size: 25px;
+  color: #111;
 }
-.btn-next:disabled,
-.btn-prev:disabled {
-  background-color: lightgray;
+
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 12px;
 }
-.btn-next:hover,
-.btn-prev:hover {
-  cursor: pointer;
-  background-color: white;
-  color: #000000;
-  transition: 0.7s ease-out;
+
+.tech-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #d7dbe2;
+  font-size: 15px;
+  color: #111;
 }
-.btn-prev {
-  left: 18px;
-  top: 50%;
+
+#about {
+  scroll-margin-top: 110px; 
 }
-.btn-next {
-  right: 18px;
-  top: 50%;
-}
-.info-about {
-  margin: 0 0 0 60px;
-}
-.txt-about dt {
-}
-.txt-about {
-  margin-top: 55px;
-}
-.txt-about dd {
-  font-size: 22px; /* 텍스트 크기 조정 */
-  white-space: nowrap; /* 줄바꿈 방지 */
-  word-spacing: 30px; /* 단어 간격 조정 */
-  text-align: center; /* 중앙 정렬 */
-}
-.btn-about {
-  margin: 50px 0 50px 0px;
-  text-align: center;
-}
-.btn-about button {
-  width: 140px;
-  height: 140px;
-  margin: 0 45px 0 0;
-  border-radius: 100%;
-  background-color: #000000;
-  border: none;
-  color: white;
-  font-size: 23px;
-}
-.btn-about button:hover {
-  cursor: pointer;
-  background-color: #fdfdfd;
-  color: #000000;
-  border: 2px solid #000000; 
-  //transition: 0.5s ease-out;
-}
-.btn-about button img {
-  width: 43px;
-  margin: 10px auto;
+
+/* 반응형 */
+@media (max-width: 860px) {
+  .about-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-wrap {
+    width: 180px;
+    height: 180px;
+  }
+
+  .stack-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* project */
+
+#project {
+  scroll-margin-top: 255px;
+}
+
 .section-project {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 150px 0 250px 0;
+  //padding-top: 90px;
+  //padding: 150px 0 250px 0;
   //margin-bottom: 180px;
   background-color: #ffffff;
 }
@@ -283,6 +312,7 @@ body::-webkit-scrollbar {
   font-family: "GmarketBold";
   color: #000000;
   font-size: 50px;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 
@@ -364,7 +394,7 @@ body::-webkit-scrollbar {
 }
 .footer-overlay-container {
   position: relative;
-  text-align: center; /* 텍스트 중앙 정렬 */
+  text-align: center; 
 }
 
 .footer-title {
@@ -403,7 +433,7 @@ body::-webkit-scrollbar {
 
 .link-sns a {
   position: relative;
-  color: black; /* 기본 텍스트 색상 블랙 */
+  color: black; 
   text-decoration: none;
 }
 
@@ -412,13 +442,13 @@ body::-webkit-scrollbar {
   position: absolute;
   width: 100%;
   height: 139%;
-  background-color: black; /* 네모박스 색상 검정 */
+  background-color: black; 
   transform-origin: 100% 50%;
   transform: scale(0, 1);
-  top: -6px; /* 네모박스 상단 위치 조정 */
-  left: 0px; /* 네모박스 좌측 위치 조정 */
+  top: -6px; 
+  left: 0px; 
   transition: transform 0.3s cubic-bezier(0.33, 0.91, 0.42, 1);
-  z-index: -1; /* 박스가 텍스트 뒤로 가게 */
+  z-index: -1; 
 }
 
 .link-sns a:after {
@@ -426,7 +456,7 @@ body::-webkit-scrollbar {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: black; /* 기본 밑줄 색상 블랙 */
+  background-color: black; 
   left: 0;
   bottom: -3px;
   transform-origin: 0% 50%;
@@ -450,7 +480,7 @@ body::-webkit-scrollbar {
 }
 
 .link-sns a:hover {
-  color: white; /* 마우스를 올렸을 때 텍스트 색상 화이트 */
+  color: white; 
 }
 
 
@@ -568,13 +598,13 @@ body::-webkit-scrollbar {
   border-radius: 5px;
 }
 .modal::-webkit-scrollbar {
-  width: 6px; /* 스크롤바 너비를 줄여서 더 슬림하게 */
-  height: 30px; /* 스크롤바의 세로 길이를 줄임 */
+  width: 6px; 
+  height: 30px; 
 }
 
 .modal::-webkit-scrollbar-thumb {
-  height: 30px; /* 스크롤바 막대의 세로 길이 */
-  background-color: #000000; /* 스크롤바 막대 색상 */
+  height: 30px; 
+  background-color: #000000; 
   border-radius: 4px;
 }
 
@@ -589,21 +619,21 @@ body::-webkit-scrollbar {
   bottom: 40px;
   width: 50px;
   height: 50px;
-  background-color: #fff; /* 배경을 흰색으로 변경 */
+  background-color: #fff; 
   border: none;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #000; /* 화살표 색상을 검정으로 변경 */
+  color: #000; 
   font-size: 24px;
   cursor: pointer;
   z-index: 100;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 회색 그림자 추가 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn-moveTop:hover {
-  background-color: #f0f0f0; /* 호버 시 배경을 약간 어두운 회색으로 변경 */
+  background-color: #f0f0f0; 
 }
 
 /* 애니메이션 정의 */
@@ -612,10 +642,10 @@ body::-webkit-scrollbar {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-10px); /* 위로 이동하는 거리 */
+    transform: translateY(-10px); 
   }
   60% {
-    transform: translateY(-5px); /* 약간 더 이동 */
+    transform: translateY(-5px); 
   }
 }
 
@@ -625,13 +655,13 @@ body::-webkit-scrollbar {
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 50px; /* 아이콘 크기 조정 */
+  font-size: 50px; 
   color: #ffffff;
-  animation: bounce 1.5s infinite; /* 애니메이션 적용 */
+  animation: bounce 1.5s infinite;
   text-shadow: 0 4px 15px rgb(0 0 0 / 50%);
 }
 
 .scroll-down:hover {
-  color: #ffffff; /* 호버 시 색상 변경 (효과 없음) */
-  cursor: default; /* 호버 시에도 기본 커서로 유지 */
+  color: #ffffff; 
+  cursor: default; 
 }

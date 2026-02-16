@@ -30,8 +30,8 @@
         <div class="cont-intro">
           <a name="info"></a>
           <p class="txt-title">
-            <span class="txt-overlay">Developer</span>
-            <span class="light">안녕하세요, 개발자를 꿈꾸는 </span><span class="bold">박현아</span><span class="light">입니다.</span>
+            <span class="txt-overlay">Portfolio</span>
+            <span class="light">안녕하세요, 서비스를 이해하고 구현하는 </span><span class="bold">박현아</span><span class="light">입니다.</span>
           </p>
           </div>
           <!-- 스크롤 안내 아이콘 추가 -->
@@ -41,66 +41,114 @@
         </div>
       </section>
 
-      <section class="section-about">
-        <a name="about"></a>
+   <!-- About -->
+      <section class="section-about" id="about">
         <h2>About Me</h2>
-        <div class="cont-about">
-          <div class="slide-container">
-            <div class="slide-album">
-              <div class="slide-images">
-                <img src="src/img/profile.jpg" alt="img" />
+
+        <div class="about-wrap">
+        <div class="about-top">
+  <div class="about-left">
+    <div class="profile-circle">
+      <img src="src/img/profile.jpg" alt="프로필 이미지">
+    </div>
+  </div>
+
+  <div class="about-right">
+    <div class="strength-row">
+      <span class="chip">사용자 중심</span>
+      <span class="chip">피드백 수용</span>
+      <span class="chip">지속적 학습</span>
+    </div>
+
+    <p class="about-summary">
+      10년간 고객을 응대하며 체감한 불편함을 바탕으로,<br>
+      사용자 중심의 서비스 제공을 추구합니다.
+    </p>
+  </div>
+</div>
+
+          <!-- 스택 2x2 카드 -->
+          <div class="stack-grid">
+            <section class="stack-card">
+              <h3 class="stack-title">백엔드</h3>
+              <div class="chip-list">
+                <span class="tech-chip">Spring</span>
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">MyBatis</span>
+                <span class="tech-chip">Oracle</span>
+                <span class="tech-chip">Java</span>
               </div>
-            </div>
-          </div>
-          <div class="info-about">
-            <dl class="txt-about">
-              <div>
-                <dd>#책임감 #피드백_수용 #끊임없는_배움 #사용자_중심_개발추구</dd>
+            </section>
+
+            <section class="stack-card">
+              <h3 class="stack-title">프론트엔드</h3>
+              <div class="chip-list">
+                <span class="tech-chip">JavaScript</span>
+                <span class="tech-chip">HTML</span>
+                <span class="tech-chip">CSS</span>
+                <span class="tech-chip">Bootstrap</span>
+                <span class="tech-chip">jQuery</span>
               </div>
-            </dl>
-            <div class="btn-about">
-              <button class="btn-open" type="button">
-                <i class="fa-solid fa-user"></i> Me
-              </button>
-              <button class="btn-open" type="button">
-                <i class="fa-solid fa-screwdriver-wrench"></i> Stack
-              </button>
-            </div>
+            </section>
+
+            <section class="stack-card">
+              <h3 class="stack-title">UI/UX</h3>
+              <div class="chip-list">
+                <span class="tech-chip">Figma</span>
+                <span class="tech-chip">Photoshop</span>
+                <span class="tech-chip">Visual Studio</span>
+              </div>
+            </section>
+
+            <section class="stack-card">
+              <h3 class="stack-title">기획 & 협업</h3>
+              <div class="chip-list">
+                <span class="tech-chip">Notion</span>
+                <span class="tech-chip">Slack</span>
+                <span class="tech-chip">Git</span>
+              </div>
+            </section>
           </div>
         </div>
       </section>
 
-      <section class="section-project">
-        <a name="project"></a>
-        <h2>Project</h2>
-        <article class="box-project">
-          <div>
-            <img
-              class="img-project"
-              src="src/img/project.PNG"
-              alt="프로젝트 이미지"
-            />
-            <button
-              class="btn-detail"
-              type="button"
-              onclick="location.href='https://github.com/mmmzm/DOMA_final_project';"
-            >
-              GitHub 바로가기
-            </button>
-          </div>
-          <div class="txt-project">
-            <h3>DORO MASTER</h3>
-            <dl>
-              <dt>기간</dt>
-              <dd>2024.07.01~08.26(총 9주)</dd>
-              <dt>설명</dt>
-              <dd>도로상황 빅데이터 통합 플랫폼 웹 서비스</dd>
-              <dt>사용 기술</dt>
-              <dd>HTML / JavaScript / CSS / Bootstrap / <br>Spring / Oracle 등을 사용하여 TDD방식으로 개발</dd>
-            </dl>
-          </div>
-        </article>
-      </section>
+
+<section class="section-project">
+  <h2 id="project">Project</h2>
+
+  <article class="box-project">
+    <div>
+      <img
+        class="img-project"
+        src="src/img/project.PNG"
+        alt="프로젝트 이미지"
+      />
+      <button
+        class="btn-detail"
+        type="button"
+        onclick="location.href='https://github.com/mmmzm/DOMA_final_project';"
+      >
+        GitHub 바로가기
+      </button>
+    </div>
+
+    <div class="txt-project">
+      <h3>DORO MASTER</h3>
+      <dl>
+        <dt>기간</dt>
+        <dd>2024.07.01~08.26(총 9주)</dd>
+        <dt>설명</dt>
+        <dd>도로상황 빅데이터 통합 플랫폼 웹 서비스</dd>
+        <dt>사용 기술</dt>
+        <dd>
+          HTML / JavaScript / CSS / Bootstrap / <br />
+          Spring / Oracle 등을 사용하여 TDD방식으로 개발
+        </dd>
+      </dl>
+    </div>
+  </article>
+</section>
+
 
       <footer id="footer">
         <a name="contact"></a>
